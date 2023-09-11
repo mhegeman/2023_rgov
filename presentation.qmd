@@ -1,0 +1,34 @@
+---
+title: "Not Sure Yet..."
+author: "Melissa Albino Hegeman"
+format: revealjs
+editor: visual
+---
+
+## Agenda
+
+-   About Me
+
+-   Challenges
+
+-   Solutions
+
+## About Me
+
+::: columns
+::: {.column width="40%"}
+I am a marine biologist
+
+...
+
+I am also a ...
+:::
+
+::: {.column width="60%"}
+![](seinfeld.jpg)
+:::
+:::
+
+::: notes
+I am a marine biologist, and people definitely have thoughts on what it is to be a marine biologist.
+:::
