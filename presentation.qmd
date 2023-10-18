@@ -1,9 +1,19 @@
 ---
-title: "Not Sure Yet..."
+title: "It Works on My Machine - Reproducibility in R for Small Teams"
 author: "Melissa Albino Hegeman"
 format: revealjs
 editor: visual
 ---
+
+## It Works on My Machine
+
+Reproducibility in R for Small Teams
+
+![Microsoft Teams Sticker](works-on-my-machine.jpg){fig-alt="Works on my machine - MS Teams sticker" fig-align="right"}
+
+R Gov
+
+October 19, 2023
 
 ## Agenda
 
@@ -21,7 +31,7 @@ I am a marine biologist
 
 ...
 
-I am also a ...
+I am also a data manager, engineer, and analyst Help desk, product manager, etc
 :::
 
 ::: {.column width="60%"}
@@ -32,3 +42,9 @@ I am also a ...
 ::: notes
 I am a marine biologist, and people definitely have thoughts on what it is to be a marine biologist.
 :::
+
+## Using R in Teams
+
+-   Github
+-   custom packages
+-   renv package
