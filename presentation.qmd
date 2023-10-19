@@ -9,27 +9,25 @@ editor: visual
 
 ## It Works On My Machine - Reproducibility in R for Small Teams
 
-:::: {.columns}
 
-::: {.column width="40%"}
-
-R Gov 2023  
-October 19, 2023  
-
-Melissa Albino Hegeman
-
-:::
-
-::: {.column width="60%"}
-![Microsoft Teams Sticker](works-on-my-machine.jpg){fig-alt="Works on my machine - MS Teams sticker" fig-align="left"}
-:::
-
-::::
-
+![Microsoft Teams Sticker](works-on-my-machine.jpg){fig-alt="Works on my machine - MS Teams sticker" fig-align="center"}
+Melissa Albino Hegeman, October 19, 2023
 
 ::: notes
 
 My favorite Teams sticker for when I don't want to deal.
+
+:::
+
+## Disclaimer
+
+- I work for NYSDEC, but the opinions I'm presenting are my own and don't reflect agency policy.
+
+- Images were generated with Adobe FireFly
+
+::: notes
+
+Now for the required disclaimer: I work for NYSDEC, but the opinions I'm presenting are my own and don't reflect agency policy.
 
 :::
 
@@ -38,15 +36,17 @@ My favorite Teams sticker for when I don't want to deal.
 
 :::: {.columns}
 
-::: {.column width="60%"}
-- Marine biologist
+::: {.column width="40%"}
 
-- ![](research-vessel.jpg)
+![](research-vessel.jpg)
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="60%"}
+- Marine biologist
+
 - Get really seasick
+
 - Work with fisheries data
 :::
 
@@ -56,18 +56,6 @@ My favorite Teams sticker for when I don't want to deal.
 I am really nervous, I feel like a bit of an imposter here. You see, I am not a computer programmer, software engineer, or a statistics whiz. I am a marine biologist. And that is a really cool job title to have. When I tell people I am a marine biologist, they usually have a few dramatic ideas about what marine biologists do. That we are out swimming with dolphins or out on the water for days at a time conducting research, and some marine biologists do that, but I get seasick, so that type of work isn't for me. I work with marine fisheries data, specifically catch and effort data. Who catches what, how much, where and when. I spend most of my time cleaning data, getting it to the people who need it, doing my own analysis, and writing reports. 
 ::: 
 
-## Disclaimer
-
-- I work for NYSDEC, but the opinions I'm presenting are my own and don't reflect agency policy.
-
-- I generated the images with Adobe FireFly
-
-::: notes
-
-Now for the required disclaimer: I work for NYSDEC, but the opinions I'm presenting are my own and don't reflect agency policy.
-
-:::
-
 ## How I Am Using R
 
 :::: {.columns}
@@ -75,6 +63,7 @@ Now for the required disclaimer: I work for NYSDEC, but the opinions I'm present
 ::: {.column}
 
 ![](making-a-report.jpg)
+:::
 
 ::: {.column}
 
@@ -103,7 +92,7 @@ I use R for many different things. **[advance]** Obviously, I want to automate a
 
 ::: {.column}
 
-- 10 people of less
+- 10 people or less
 - Limited to no experience with R
 - No enterprise tools
 
@@ -131,14 +120,27 @@ So, I created all of these tools and workflows that significantly cut down the a
 
 ## Setting Up for Success
 
+:::: {.columns}
+
+::: {.column}
+
+![](tools.png)
+:::
+
+::: {.column}
+
 - R projects
 - GitHub
 - Custom R package
-- renv
+- {renv}
+
+:::
+
+::::
 
 ::: notes
 
-I started googling things, reading all the blog posts, watching the tutorials. A few things became clear, I should be using R projects. Use git to keep track of changes. It would probably be worth it to make my own R package. And lastly, I can avoid problems for different environments using renv. And I thought, "I got this!!!" 
+I started googling things, reading all the blog posts, watching the tutorials. A few things became clear, I should be using R projects. Use git to keep track of changes. It would probably be worth it to make my own R package. And lastly, I can avoid problems for different environments using {renv}. And I thought, "I got this!!!" 
 
 ::: 
 
@@ -189,7 +191,7 @@ Spoiler alert: it didn't work seamlessly the first time through, or even the ten
 - R projects
 - GitHub
 - Custom R package
-- renv
+- {renv}
 
 :::
 
@@ -292,7 +294,7 @@ Making our own package. This was actually the most successful effort out of ever
 
 :::
 
-## renv
+## {renv}
 
 :::: {.columns}
 
@@ -301,7 +303,10 @@ Making our own package. This was actually the most successful effort out of ever
 Issues
 
 - Slow to boot up a project for the first time
+
 - Staff were updating the lockfile rather than adjusting their installed packages when their project was out of sync
+
+:::
 
 ::: {.column}
 
@@ -309,21 +314,27 @@ Successes
 
 - This is still a work in progress
 
-- Wait until you are done developing before you initialize renv
+- Wait until you are done developing before you initialize {renv}
 
 - Forced me to minimize the amount of dependencies I rely on
+
+:::
 
 :::: 
 
 ::: notes
 
-The last major issue we encountered was that everyone's development environment was slightly different. Renv is supposed to address this. Depending on when a new hire started, they might have a different version of R installed than the project was developed in. And there were dozens of different combinations of package versions floating around. We recently started using the renv package in specific projects to get everyone on the same page using the package versions used to create the project. You know, I said GitHub was the biggest learning curve, but it is actually renv. **[advance]** It takes a long time to get the project going after you've cloned a  repository where renv was initialized. This might be specific to our system, but it can take an hour to start your work when using renv. That is really frustrating to newer users. **[advance]** Users' libraries would frequently get out of sync with the lockfile. Most of the time, they would try to update the lockfile, which completely defeats the purpose. This package was most helpful to implement when you were done coding and only envisioned minor edits from now on. **[advance]** It also works better when you minimize the number of dependencies your project needs. 
+The last major issue we encountered was that everyone's development environment was slightly different. {renv} is supposed to address this. Depending on when a new hire started, they might have a different version of R installed than the project was developed in. And there were dozens of different combinations of package versions floating around. We recently started using the renv package in specific projects to get everyone on the same page using the package versions used to create the project. You know, I said GitHub was the biggest learning curve, but it is actually renv. **[advance]** It takes a long time to get the project going after you've cloned a  repository where renv was initialized. This might be specific to our system, but it can take an hour to start your work when using renv. That is really frustrating to newer users. **[advance]** Users' libraries would frequently get out of sync with the lockfile. Most of the time, they would try to update the lockfile, which completely defeats the purpose. This package was most helpful to implement when you were done coding and only envisioned minor edits from now on. **[advance]** It also works better when you minimize the number of dependencies your project needs. 
 
 :::
 
 ## Solutions
 
 - Consistent and continued training for new staff
+
+- Simplify where ever you can
+
+- Avoid scope creep in your projects
 
 ::: notes
 
@@ -333,7 +344,6 @@ What do we need to change to do better? **[advance]** One common thread is the n
 
 ## Next Steps
 
-Containers
 
 :::: {.columns}
 
@@ -352,20 +362,17 @@ Containers
 
 ::: notes
 
-Everything I've talked about so far is from the perspective of a small group without significant IT resources to throw around. However, there is one strategy I've shied away from in the past because I've associated it with larger IT operations: containers. I've been experimenting with containers to have even more control over how team members are coding in R. The examples I've talked about to this point involved people running code already written. I want to see other team members start adding features to these projects, and having a consistent environment from the start should help avoid some of the problems I've discussed today. 
+Everything I've talked about so far is from the perspective of a small group without significant IT resources to throw around. However, there is one strategy that've I've only really associated with larger programs: **[advance]** containers, such as docker or podman. I had been afraid to try this, it seemed really intimidating. But honestly, I've been experimenting with containers and it hasn't been any more frustrating than everything that I've already talked about. Having this much control over the development environment is really appealing. The examples I've talked about to this point involved people running code already written, but everyone needs to be working toward developing new features on their own, and having a consistent environment from the start should help avoid some of the biggest roadblocks to getting started. When your trying to lead your group in a certain direction, it is really important to give them successes early on. 
 
-## Wrap Up
-
-::: notes
-That highlights the struggles of sharing code over a small team with some lessons learned and ideas you an hopefully take to your team. Thank you. You can find me at Linked In and git hub. 
-
-:::
 
 ## Thank You
 
 Melissa Albino Hegeman
 
-melissa.hegeman@gmail.com
-https://www.linkedin.com/in/melissaalbinohegeman/
 https://github.com/mhegeman/2023_rgov
 
+
+::: notes
+So I hope that those of you who are also working on a small team and trying to be innovative with very limitied resources can learn from all of these issues that I encountered and skip over them in your own project. Thank you. You can find me at Linked In and git hub. 
+
+:::
