@@ -315,7 +315,6 @@ Successes
 
 - Everyone is applying the same treatment to the data no matter where they are working
 
-- Dependent on staff making sure their version was updated regularly
 
 :::
 
