@@ -1,1 +1,37 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # 2023_rgov
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+# It Works on My Machine
+
+## Reproducibility in R for Small Teams
+
+This repository contains the slides and code for a presentation titled
+“It Works On My Machine - Reproducibility in R for Small Teams” given at
+the R Gov Conference on October 18, 2023. The presentation was created
+using RStudio and Quarto.
+
+The goal of the presentation is to discuss challenges and strategies for
+improving reproducibility and sharing code with small teams that have
+limited R experience and resources. It covers several common approaches:
+
+- Using R Projects for relative file paths and portability
+- GitHub repositories for distributing code efficiently
+- Custom R packages for standardizing data processing
+- {renv} for managing dependencies consistently
+
+Some key takeaways:
+
+- Consistent training is essential as team members come from diverse
+  backgrounds
+- Simplify workflows and minimize dependencies wherever possible to
+  minimize frustration
+- Avoid scope creep and only add complexity when needed
+
+View the slide deck for the full presentation content including speaker
+notes. The code to generate the slides from Quarto markdown is also
+provided.
