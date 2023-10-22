@@ -350,7 +350,7 @@ Successes
 
 - Wait until you are done developing before you initialize {renv}
 
-- Forced me to minimize the amount of dependencies I rely on
+- Forced me to minimize the amount of dependencies I use
 
 :::
 
