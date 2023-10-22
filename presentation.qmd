@@ -21,13 +21,13 @@ My favorite Teams sticker for when I don't want to deal.
 
 ## Disclaimer
 
-- I work for NYSDEC, but the opinions I'm presenting are my own and don't reflect agency policy.
+- The opinions I'm presenting are my own and don't reflect agency policy.
 
-- Images were generated with Adobe FireFly
+- Images were generated with Adobe FireFly.
 
 ::: notes
 
-Now for the required disclaimer: I work for NYSDEC, but the opinions I'm presenting are my own and don't reflect agency policy.
+Now for the required disclaimer: The opinions I'm presenting are my own and don't reflect agency policy.
 
 :::
 
@@ -53,12 +53,13 @@ Now for the required disclaimer: I work for NYSDEC, but the opinions I'm present
 ::::
 
 ::: notes
- - I am really nervous, I feel like a bit of an imposter here. I am not a computer programmer, software engineer, or a statistics whiz. 
- - I am a marine biologist. And that is a really cool job title to have. 
- - People have a lot of ideas about what a marine biologist does. We are out swimming with dolphins or out on the ocean for days at a time conducting research, and some marine biologists do that, 
+ - I am not a computer programmer, software engineer, or a statistician. 
+ - I am a marine biologist. 
+ - People have a lot of ideas about what a marine biologist does. That it is a field intensive job where you are out on the water for days at a time conducting research. Some marine biologists do that, 
  - But I get seasick, so that type of work isn't for me. 
  - I ended up working with marine fisheries data from the safety of my cube, 
  - Specifically I work with catch and effort data. Who catches what, how much, where and when. I spend most of my time cleaning data, getting it to the people who need it, doing my own analysis, and writing reports. 
+ 
 ::: 
 
 ## How I Am Using R
@@ -81,8 +82,8 @@ Now for the required disclaimer: I work for NYSDEC, but the opinions I'm present
 
 ::: notes
 
-- I use R for many different things. **[advance]** 
-- Obviously, I want to automate all the things. Anything that I do on a schedule should me automated. I hate having to do the same thing more than 2 or 3 times. **[advance]** 
+- I use R for many different things.
+- Obviously, I want to automate all the things. Anything that I do on a schedule should me automated. I hate having to do the same thing more than 2 or 3 times.
 - More recently, I've enjoyed using R for report generation, where you need customized output for many individuals. Think a couple of thousand reports where the data is coming from several sources and you update it once a quarter. And the reports have some logic baked in so we only include the sections that are specific to the individual. This is taking mail merge up a level and has been really successful. But I'm not going to talk about that today.
 - What I am going to talk about is what happens once you've proven your concept and put it into production, and now you and your team have to keep it going.  
 
@@ -110,9 +111,9 @@ Now for the required disclaimer: I work for NYSDEC, but the opinions I'm present
 
 ::: notes
 
-For this talk, **[advance]** 
-- a small team is around ten people or less. **[advance]** 
-- I will also add the caveat that everyone on this team is trained in something other than computer science/computer programming. This talk really focuses on people who specialize in something else but need to know how to code to do their job effectively. **[advance]** 
+For this talk,
+- a small team is around ten people or less.
+- I will also add the caveat that everyone on this team is trained in something other than computer science/computer programming. This talk really focuses on people who specialize in something else but need to know how to code to do their job effectively.
 - They also don't have access to any enterprise versions of R/Rstudio or the tools that would come with that. 
 
 :::
@@ -158,10 +159,10 @@ For this talk, **[advance]**
 ::: notes
 
 - How do we set everyone up for success
-- I started googling things, reading all the blog posts, watching the tutorials. **[advance]**
-- I should be using R projects. **[advance]**
-- Use git to keep track of changes. **[advance]** 
-- Make my own package. **[advance]**
+- I started googling things, reading all the blog posts, watching the tutorials.
+- I should be using R projects.
+- Use git to keep track of changes. 
+- Make my own package.
 - And lastly, I can avoid problems from different environments using {renv}. And I thought, "I got this!!!" Piece of cake. It seemed like no one on the internet had any problems with this. 
 
 ::: 
@@ -196,7 +197,7 @@ For this talk, **[advance]**
 ::: notes
 
 - Spoiler alert: it didn't work seamlessly the first time, or even the tenth time. 
-- The first time I asked a coworker to run a project on their machine, it was a complete failure despite all of that effort. And that wasn't an isolated incident. **[advance]** 
+- The first time I asked a coworker to run a project on their machine, it was a complete failure despite all of that effort. And that wasn't an isolated incident.
 - We saw all of the classics - you don't have the right packages, or that the data doesn't exist. The file paths are all wrong, or you don't have the right permissions. This was particularly frustrating for folks who had to learn R for the first time after they were hired. Colleagues with some previous R or Python experience were often able to debug and get it working, but it still needed to be a smoother experience.   
 
 :::
@@ -253,10 +254,10 @@ Successes
 
 ::: notes
 
-R projects. **[advance]** 
+R projects.
 - The biggest issue we ran into was that it wasn't being used as it was intended. People didn't understand how an R project functioned. They treated it like a standard folder and missed all the R specific features it adds. 
-- They would be working on their projects but trying to pull in scripts from other projects. Unsurprisingly, their code would fail because R couldn't find what it was looking for. The only way to stop this is better training.**[advance]** 
-- How projects handle relative paths is really helpful  **[advance]** 
+- They would be working on their projects but trying to pull in scripts from other projects. Unsurprisingly, their code would fail because R couldn't find what it was looking for. The only way to stop this is better training.
+- How projects handle relative paths is really helpful
 - For ad hoc analysis, sometimes this is enough to get to good enough reproducibility and portability
 
 :::
@@ -287,10 +288,10 @@ Success
 
 ::: notes
 
-GitHub Repositories. **[advance]** 
+GitHub Repositories. 
 - This had the most significant learning curve of anything that we worked on. Which isn't unusual. 
-- People would often be running very out-of-date versions of a repository, which would fail for various reasons. It is crucial to get everyone to check for updates and ensure everything is current. **[advance]** 
-- Once they get this workflow down, it is the easiest way to get code on everyone's machine.  **[advance]** 
+- People would often be running very out-of-date versions of a repository, which would fail for various reasons. It is crucial to get everyone to check for updates and ensure everything is current. 
+- Once they get this workflow down, it is the easiest way to get code on everyone's machine. 
 - The best thing about using github with new coders is that it gives them the freedom to try new things without being destructive. They can create a fork and do their own analysis and if they blow it up, it's okay. Having the ability to mess up with minimal consequences is important. 
 
 :::
@@ -361,9 +362,9 @@ Successes
 We are trying to use {renv} to keep everyone's packages in line. 
 - Depending on when a new hire started, they might have a different version of R installed than the project was developed in. And there were dozens of different combinations of package versions floating around. 
 - We recently started using the renv package in specific projects to get everyone on the same page using the package versions used to create the project. 
-- You know, I said GitHub was the biggest learning curve, but it is actually renv. **[advance]** 
-- It takes a long time to get the project going after you've cloned a  repository where renv was initialized. This might be specific to our system, but it can take an hour to start your work when using renv. That is really frustrating to newer users. **[advance]** 
-- Users' libraries would frequently get out of sync with the lockfile. Most of the time, they would try to update the lockfile, which completely defeats the purpose. This package was most helpful to implement when you were done coding and only envisioned minor edits from now on. **[advance]** 
+- You know, I said GitHub was the biggest learning curve, but it is actually renv.
+- It takes a long time to get the project going after you've cloned a  repository where renv was initialized. This might be specific to our system, but it can take an hour to start your work when using renv. That is really frustrating to newer users. 
+- Users' libraries would frequently get out of sync with the lockfile. Most of the time, they would try to update the lockfile, which completely defeats the purpose. This package was most helpful to implement when you were done coding and only envisioned minor edits from now on.
 - It also works better when you minimize the number of dependencies your project needs. 
 
 :::
@@ -378,7 +379,7 @@ We are trying to use {renv} to keep everyone's packages in line.
 
 ::: notes
 
-What do we need to change to do better? **[advance]** 
+What do we need to change to do better? 
 - One common thread is the need for more consistent training as part of an onboarding process. Which can be really tough when you are all learning as you go. Team members usually come from varying backgrounds, 
 - you can't assume that anyone has covered this type of information in the past. As the bare minimum, I've compiled a list of YouTube resources for team members explaining some of the basic concepts tripping people up. Ideally, your team will add to this list as they find additional resources that help them. 
 
@@ -404,7 +405,7 @@ What do we need to change to do better? **[advance]**
 
 ::: notes
 
-Everything I've talked about so far is from the perspective of a small group without significant IT resources to throw around. However, there is one strategy that've I've only really associated with larger programs: **[advance]** 
+Everything I've talked about so far is from the perspective of a small group without significant IT resources to throw around. However, there is one strategy that've I've only really associated with larger programs:
 - containers, such as docker or podman. I had been afraid to try this, it seemed really intimidating. But honestly, it hasn't been any more frustrating than everything that I've already talked about. Having this much control over the development environment is really appealing. 
 - The examples I've talked about to this point involved people running code already written, but everyone needs to be working toward developing new features on their own, and having a consistent environment from the start should help avoid some of the biggest roadblocks to getting started. When your trying to lead your group in a certain direction, it is really important to give them successes early on. 
 
